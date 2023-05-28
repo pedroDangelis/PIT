@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container_total {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.cont_esq {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input {
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    background-color: #E6E6E6;
+    padding-left: 50px;
+}
+
+.cont_dir {
+    width: 50%;
+    height: 100vh;
+    background-image: url(./assets/img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input.button {
+    background-color: #326DC5;
+    border-radius: 10px;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    width: 400px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+#botoesDiv{
+   margin: 0 auto;
+   text-align: center;
+   background-color: #DBDBDB;
+   border-radius: 10px;
+   width: 20em;
+   box-shadow: 0 2px 5px 0 rgb(83, 83, 83);
+   display: flex;
+   justify-content: space-between;
+}
+
+.botoes{
+    margin-left: 0 auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: #326DC5;
+    text-decoration-line: none;
+}
+
+.botoes:hover{
+    background-color: #326DC5;
+    color: white;
+}
+
+.botao-azul{
+    background-color: #326DC5;
+    color: white;
+    margin: 2%; 
+}
+
+.botao-azul:hover{
+    opacity: .9;
+}
+
+.botao-cinza{
+    color: #326DC5;
+    margin-top: 2%; 
+    margin-bottom: 2%;
+}
+
+
+#btnLoginIndex{
+    background-color: #326DC5;
+    color: white;
+    margin-top: 2%; 
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+#btnCadastroIndex:hover{
+    background-color: #326DC5;
+    color: white;
+    margin-top: 2%; 
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+#btnLoginCadastro:hover{
+    background-color: #326DC5;
+    color: white;
+    margin-top: 2%; 
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+#btnCadastroCadastro{
+    background-color: #326DC5;
+    color: white;
+    margin-top: 2%; 
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+#parceiro{
+    padding-left: 6.5em;
+}
+
+
+#eSenha{
+    font-size: 14px;
+    color: #326DC5;
+    opacity: .8;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#linha{
+    margin: 0 auto;
+    height: 1px;
+    width: 12em;
+    background-color: #326DC5;
+}
+
+.icons{
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 45px 45px 45px;
+    justify-content: center;
+    column-gap: 3em;
+    margin-bottom: 8%;
+}
+
+.iconsCadastro{
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 45px 45px 45px;
+    justify-content: center;
+    column-gap: 3em;
+    margin-bottom: 4%;
+    margin-top: -4%;
+}
+
+.logos{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #c7c7c7;
+    border: solid;
+    border-color: rgba(0, 0, 0, 0.205);
+    border-radius: 50px;
+    border-width: 1px;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.email-container{
+    position: relative;
+}
+
+.img-input{
+    position: absolute;
+    left: 0;
+    margin-left: 10px;
+    top: 25%;
+}
+
+#Logo{
+    margin-top: -10%;
+    margin-left: 10%;
+    align-items: center;
+}
