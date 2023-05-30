@@ -23,7 +23,7 @@ require 'db.php';
             <div class="form">
                 <form action="code.php" method="post">
 
-                <img src="assets/PIT_LOGO.png" alt="" id="Logo" width="300px">
+                    <img src="assets/PIT_LOGO.png" alt="" id="Logo" width="300px">
 
                     <div id="botoesDiv">
                         <a class="botoes" href="Index.php" id="btnLoginCadastro" onclick="mudarCor('btnLogin')">Entrar</a>
@@ -31,7 +31,7 @@ require 'db.php';
                     </div>
 
                     <div class="email-container">
-                        <input  type="email" name="email" id="" placeholder="Email">
+                        <input type="email" name="email" id="" placeholder="Email">
                         <img class="img-input" src="https://www.svgrepo.com/show/502648/email.svg" width="30" alt="">
                     </div>
 
@@ -41,17 +41,17 @@ require 'db.php';
                     </div>
 
                     <div class="email-container">
-                        <input  type="text" name="crp" id="" placeholder="Crp">
+                        <input type="text" name="crp" id="" placeholder="Crp">
                         <img class="img-input" src="https://cdn.icon-icons.com/icons2/3790/PNG/512/pass_badge_identification_profile_identity_id_card_icon_232651.png" width="30" alt="">
                     </div>
 
                     <div class="email-container">
-                        <input  type="text" name="lugar" id="" placeholder="Local">
+                        <input type="text" name="lugar" id="" placeholder="Local">
                         <img class="img-input" src="https://cdn.icon-icons.com/icons2/1993/PNG/512/direction_gps_location_map_maps_navigation_pin_icon_123198.png" width="30" alt="">
                     </div>
 
 
-                    <input class="button" name="cadastrar" type="submit" value="Enviar">
+                    <input class="button" name="cadastrarMedico" type="submit" value="Enviar">
                 </form>
                 <br>
                 <div id="linha"></div>

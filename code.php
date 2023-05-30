@@ -1,29 +1,6 @@
 <?php
 session_start();
 require 'db.php';
-/* 
-if (isset($_POST['cadastrar'])) {
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-
-    echo $email;
-
-    $query = "INSERT INTO usuario (email, senha) VALUES ('$email', '$senha')";
-
-    $query_run = mysqli_query($con, $query);
-
-    if ($query_run) {
-        echo 'usuario cadastrado';
-        header("Location: index.php");
-        exit(0);
-    } else {
-        echo 'erro ao criar o usuario';
-        header("Location: index.php");
-        exit(0);
-    }
-}
- */
-
 
 if (isset($_POST['cadastrar'])) {
     $email = $_POST['email'];
@@ -31,16 +8,15 @@ if (isset($_POST['cadastrar'])) {
     $nome = $_POST['nome'];
     $rg = $_POST['rg'];
     $telemovel = $_POST['telemovel'];
-    $crp = $_POST['crp'];
-    $lugar = $_POST['lugar'];
 
-    echo $email;
+    $query = "INSERT INTO usuario (email, senha, nome, rg, telemovel) VALUES ('$email', '$senha','$nome','$rg','$telemovel')";
 
-    $query = "INSERT INTO usuario (email, senha, nome, rg, telemovel, crp, lugar) VALUES ('$email', '$senha','$nome','$rg','$telemovel','$lugar','$crp')";
+    // $query_run = mysqli_query($con, $query);
+    $stmt = $PDO->prepare($query);
 
-    $query_run = mysqli_query($con, $query);
+    $result = $stmt->execute();
 
-    if ($query_run) {
+    if ($result) {
         echo 'usuario cadastrado';
         header("Location: cadastro.php");
         exit(0);
@@ -51,3 +27,95 @@ if (isset($_POST['cadastrar'])) {
     }
 }
 
+if (isset($_POST['cadastrarMedico'])) {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $crp = $_POST['crp'];
+    $local = $_POST['lugar'];
+
+    $query = "INSERT INTO usuario (email, senha, crp, lugar) VALUES ('$email', '$senha','$crp','$local')";
+
+    // $query_run = mysqli_query($con, $query);
+    $stmt = $PDO->prepare($query);
+
+    $result = $stmt->execute();
+
+    if ($result) {
+        echo 'usuario cadastrado';
+        header("Location: cadastroMedico.php");
+        exit(0);
+    } else {
+        echo 'erro ao criar o usuario';
+        header("Location: cadastroMedico.php");
+        exit(0);
+    }
+}
+
+if (isset($_POST['entrar'])) {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $queryEmail = "SELECT email FROM usuario where email = '$email'";
+
+    $result = $PDO->query($queryEmail);
+
+
+    if (!$result) {
+        echo 'Erro ao buscar email';
+    }
+
+    $rows = $result->fetchAll(PDO::FETCH_ASSOC);
+
+    if ($rows > 0) {
+
+        $querySenha = "SELECT senha FROM usuario where email = '$email'";
+
+        $resultSenha = $PDO->query($querySenha);
+
+        $rows = $resultSenha->fetchAll(PDO::FETCH_ASSOC);
+
+        print_r($rows);
+
+        if ($senha == $rows[0]['senha']) {
+            echo 'Logado com sucesso!';
+        } else {
+            echo 'A senha está errada';
+        }
+    } else {
+        echo 'Este email não está cadastrado!';
+    }
+}
+
+if (isset($_POST['recsenha'])) {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $queryEmail = "SELECT email FROM usuario where email = '$email'";
+
+    $result = $PDO->query($queryEmail);
+
+
+    if (!$result) {
+        echo 'Erro ao buscar email';
+    }
+
+    $rows = $result->fetchAll(PDO::FETCH_ASSOC);
+
+    print_r($rows);
+
+    if (count($rows) > 0) {
+        $querySenha = "UPDATE usuario set senha = '$senha' where email = '$email'";
+
+        $stmt = $PDO->prepare($querySenha);
+
+        $result = $stmt->execute();
+
+        if (!$result) {
+            echo 'Ocorreu um erro ao atualizar a senha';
+        } else {
+            echo 'Senha alterada!';
+        }
+    } else {
+        echo 'Email não cadastrado';
+    }
+}

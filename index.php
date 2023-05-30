@@ -27,12 +27,12 @@ require 'db.php';
                 <form action="code.php" method="post">
 
                     <div id="botoesDiv">
-                        <a class="botoes" href="inde.php" id="btnLoginIndex" onclick="mudarCor('btnLogin')">Entrar</a>
+                        <a class="botoes" href="index.php" id="btnLoginIndex" onclick="mudarCor('btnLogin')">Entrar</a>
                         <a class="botoes" href="Cadastro.php" id="btnCadastroIndex" onclick="mudarCor('btnCadastro')">Cadastrar</a>
                     </div>
 
                     <div class="email-container">
-                        <input  type="email" name="email" id="" placeholder="Email">
+                        <input type="email" name="email" id="" placeholder="Email">
                         <img class="img-input" src="https://www.svgrepo.com/show/502648/email.svg" width="30" alt="">
                     </div>
 
@@ -41,7 +41,7 @@ require 'db.php';
                         <img class="img-input" src="https://www.svgrepo.com/show/510035/key.svg" width="30" alt="">
                     </div>
 
-                    <input class="button" name="cadastrar" type="submit" value="Enviar">
+                    <input class="button" name="entrar" type="submit" value="Enviar">
                 </form>
                 <br>
                 <div id="linha"></div>

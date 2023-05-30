@@ -70,7 +70,7 @@ button:hover {
    width: 20em;
    box-shadow: 0 2px 5px 0 rgb(83, 83, 83);
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
 }
 
 .botoes{
