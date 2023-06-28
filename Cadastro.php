@@ -23,7 +23,7 @@ require 'db.php';
             <div class="form">
                 <form action="code.php" method="post">
 
-                <img src="assets/PIT_LOGO.png" alt="" id="Logo" width="300px">
+                    <img src="assets/PIT_LOGO.png" alt="" id="Logo" width="300px">
 
                     <div id="botoesDiv">
                         <a class="botoes" href="index.php" id="btnLoginCadastro" onclick="mudarCor('btnLogin')">Entrar</a>
@@ -31,22 +31,22 @@ require 'db.php';
                     </div>
 
                     <div class="email-container">
-                        <input  type="email" name="email" id="" placeholder="Email">
+                        <input type="email" name="email" id="" placeholder="Email">
                         <img class="img-input" src="https://www.svgrepo.com/show/502648/email.svg" width="30" alt="">
                     </div>
 
                     <div class="email-container">
-                        <input  type="text" name="nome" id="" placeholder="Nome">
+                        <input type="text" name="nome" id="" placeholder="Nome">
                         <img class="img-input" src="https://cdn.icon-icons.com/icons2/3449/PNG/512/account_member_profile_people_avatar_personal_user_icon_219331.png" width="30" alt="">
                     </div>
 
                     <div class="email-container">
-                        <input  type="number" name="telemovel" id="" placeholder="(00) 0000-0000">
+                        <input type="number" name="telemovel" id="" placeholder="(00) 0000-0000">
                         <img class="img-input" src="https://cdn.icon-icons.com/icons2/3449/PNG/512/cellular_service_telephone_support_phone_communication_call_icon_219309.png" width="30" alt="">
                     </div>
 
                     <div class="email-container">
-                        <input  type="text" name="rg" id="" placeholder="RG">
+                        <input type="text" name="rg" id="" placeholder="RG">
                         <img class="img-input" src="https://cdn.icon-icons.com/icons2/3790/PNG/512/pass_badge_identification_profile_identity_id_card_icon_232651.png" width="30" alt="">
                     </div>
 

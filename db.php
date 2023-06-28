@@ -1,7 +1,7 @@
 <?php
 
-$con = mysqli_connect('127.0.0.1', 'root', '', 'VMH');
-
-if (!$con) {
-    die('Não conectou ao banco de dados' . mysqli_connect_error());
-}
+try {
+    $PDO = new PDO('mysql:host=localhost;dbname=VMH;', 'root', '');
+} catch (PDOException $e) {
+    echo 'Erro ao conectar com o MySQL: ' . $e->getMessage();
+};
