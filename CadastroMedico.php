@@ -51,7 +51,7 @@ require 'db.php';
                     </div>
 
 
-                    <input class="button" name="cadastrar" type="submit" value="Enviar">
+                    <input class="button" name="cadastrarMedico" type="submit" value="Enviar">
                 </form>
                 <br>
                 <div id="linha"></div>

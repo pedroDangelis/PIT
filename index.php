@@ -9,7 +9,7 @@ require 'db.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Início</title>
+    <title>Entrar - VMH    </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,12 +41,13 @@ require 'db.php';
                         <img class="img-input" src="https://www.svgrepo.com/show/510035/key.svg" width="30" alt="">
                     </div>
 
-                    <input class="button" name="entrar" type="submit" value="Enviar">
+                    <a href="Inicio.php"><input class="button" name="entrar" type="submit" value="Enviar"></a>
+
                 </form>
                 <br>
                 <div id="linha"></div>
                 <a href="recsenha.php">
-                    <p id="eSenha">Esqueci a senha</p>
+                    <p id="eSenha">Esqueci senha</p>
                 </a>
                 <br><br>
 

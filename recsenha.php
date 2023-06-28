@@ -31,12 +31,12 @@ require 'db.php';
                     </div>
 
                     <div class="email-container">
-                        <input  type="email" name="email" id="" placeholder="Email">
+                        <input type="email" name="email" id="" placeholder="Email">
                         <img class="img-input" src="https://www.svgrepo.com/show/502648/email.svg" width="30" alt="">
                     </div>
 
                     <div class="email-container">
-                        <input type="password" name="senha" id="" placeholder="Senha">
+                        <input type="password" name="" id="" placeholder="Senha">
                         <img class="img-input" src="https://www.svgrepo.com/show/510035/key.svg" width="30" alt="">
                     </div>
 
@@ -45,10 +45,10 @@ require 'db.php';
                         <img class="img-input" src="https://www.svgrepo.com/show/510035/key.svg" width="30" alt="">
                     </div>
 
-                    <input class="button" name="cadastrar" type="submit" value="Enviar">
+                    <input class="button" name="recsenha" type="submit" value="Enviar">
                 </form>
 
-                <a href="index.php" id="logout">Logout</a>
+                <a href="index.php" id="logout">Voltar</a>
 
             </div>
         </div>

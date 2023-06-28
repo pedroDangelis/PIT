@@ -8,10 +8,8 @@ if (isset($_POST['cadastrar'])) {
     $nome = $_POST['nome'];
     $rg = $_POST['rg'];
     $telemovel = $_POST['telemovel'];
-    $crp = $_POST['crp'];
-    $lugar = $_POST['lugar'];
 
-    $query = "INSERT INTO usuario (email, senha, nome, rg, telemovel, crp, lugar) VALUES ('$email', '$senha','$nome','$rg','$telemovel','$lugar','$crp')";
+    $query = "INSERT INTO usuario (email, senha, nome, rg, telemovel) VALUES ('$email', '$senha','$nome','$rg','$telemovel')";
 
     // $query_run = mysqli_query($con, $query);
     $stmt = $PDO->prepare($query);
@@ -25,6 +23,30 @@ if (isset($_POST['cadastrar'])) {
     } else {
         echo 'erro ao criar o usuario';
         header("Location: cadastro.php");
+        exit(0);
+    }
+}
+
+if (isset($_POST['cadastrarMedico'])) {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $crp = $_POST['crp'];
+    $local = $_POST['lugar'];
+
+    $query = "INSERT INTO usuario (email, senha, crp, lugar) VALUES ('$email', '$senha','$crp','$local')";
+
+    // $query_run = mysqli_query($con, $query);
+    $stmt = $PDO->prepare($query);
+
+    $result = $stmt->execute();
+
+    if ($result) {
+        echo 'usuario cadastrado';
+        header("Location: cadastroMedico.php");
+        exit(0);
+    } else {
+        echo 'erro ao criar o usuario';
+        header("Location: cadastroMedico.php");
         exit(0);
     }
 }
@@ -68,5 +90,32 @@ if (isset($_POST['recsenha'])) {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    
+    $queryEmail = "SELECT email FROM usuario where email = '$email'";
+
+    $result = $PDO->query($queryEmail);
+
+
+    if (!$result) {
+        echo 'Erro ao buscar email';
+    }
+
+    $rows = $result->fetchAll(PDO::FETCH_ASSOC);
+
+    print_r($rows);
+
+    if (count($rows) > 0) {
+        $querySenha = "UPDATE usuario set senha = '$senha' where email = '$email'";
+
+        $stmt = $PDO->prepare($querySenha);
+
+        $result = $stmt->execute();
+
+        if (!$result) {
+            echo 'Ocorreu um erro ao atualizar a senha';
+        } else {
+            echo 'Senha alterada!';
+        }
+    } else {
+        echo 'Email não cadastrado';
+    }
 }
