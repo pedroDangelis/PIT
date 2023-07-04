@@ -19,7 +19,7 @@ require 'db.php';
         
     </div>
     
-    <a href="feedback.php" id="feedback">a</a>
+    <a href="feedback.php" id="feedback">Feedback</a>
 
     <div id="background"></div>
 
