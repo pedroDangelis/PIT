@@ -15,20 +15,22 @@ require 'db.php';
 <body>
 
     <div id="AreaBranca">
+
+        <a href="feedback.php">
+            <button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;FeedBack&nbsp;</span>
+                <span aria-hidden="true" class="front-text">&nbsp;FeedBack&nbsp;</span>
+            </button>
+        </a>
+
+    </div>
+
+    <div id="AreaBranca">
         <button id="botao"> Iniciar Questionário</button>   
         
     </div>
     
-    <div id="AreaBranca">
-
-    <a href="feedback.php">
     
-    <button class="button" data-text="Awesome">
-    <span class="actual-text">&nbsp;FeedBack&nbsp;</span>
-    <span aria-hidden="true" class="front-text">&nbsp;FeedBack&nbsp;</span>
-</button>
-    </a>
-    </div>
 
     <div id="background"></div>
 
