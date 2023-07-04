@@ -41,8 +41,7 @@ require 'db.php';
                         <img class="img-input" src="https://www.svgrepo.com/show/510035/key.svg" width="30" alt="">
                     </div>
 
-                    <a href="Inicio.php"><input class="button" name="entrar" type="submit" value="Enviar"></a>
-
+                    <input class="button" name="cadastrar" type="submit" value="Enviar">
                 </form>
                 <br>
                 <div id="linha"></div>
