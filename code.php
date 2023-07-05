@@ -74,10 +74,8 @@ if (isset($_POST['entrar'])) {
 
         $rows = $resultSenha->fetchAll(PDO::FETCH_ASSOC);
 
-        print_r($rows);
-
         if ($senha == $rows[0]['senha']) {
-            echo 'Logado com sucesso!';
+            header("Location: inicio.php");
         } else {
             echo 'A senha está errada';
         }
