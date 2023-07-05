@@ -68,14 +68,18 @@ if (isset($_POST['entrar'])) {
 
     if ($rows > 0) {
 
-        $querySenha = "SELECT senha FROM usuario where email = '$email'";
+        $querySenha = "SELECT senha, admin FROM usuario where email = '$email'";
 
         $resultSenha = $PDO->query($querySenha);
 
         $rows = $resultSenha->fetchAll(PDO::FETCH_ASSOC);
 
         if ($senha == $rows[0]['senha']) {
-            header("Location: inicio.php");
+            if ($rows[0]['admin']) {
+                header("Location: admin.php");
+            } else {
+                header("Location: inicio.php");
+            }
         } else {
             echo 'A senha está errada';
         }
