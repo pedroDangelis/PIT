@@ -8,35 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="pagefeed.css">
+<link rel="stylesheet" href="stylefeed.css">
 </head>
 <body>
 
+  <a href="landingpage.php">Quem Somos</a>
 
-<a href="feedback.php">Feedback</a>
+  <a href="inicio">Página</a>
 
-<a href="landingpage.php">Quem Somos</a>
+  <h1>FeedBack</h1>
 
-<a href="inicio">Página</a>
+  <div id="AreaBranca">
+    <div class="form-container">
+      <form class="form">
 
-<h1>FeedBack</h1>
+        <div class="form-group">
+          <label for="textarea">Nos conte suas sugestões, avisos ou reclamações</label>
+          <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
+        </div>
 
-<div id="AreaBranca">
-  <div class="form-container">
-    <form class="form">
+        <button class="form-submit-btn" type="submit">Enviar</button>
 
-      <div class="form-group">
-        <label for="textarea">Nos conte suas sugestões, avisos ou reclamações</label>
-        <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
-      </div>
-
-      <button class="form-submit-btn" type="submit">Enviar</button>
-
-    </form>
+      </form>
+    </div>
   </div>
-</div>
 
-<div id="background"></div>
+  <div id="background"></div>
 
 </body>
 </html>
