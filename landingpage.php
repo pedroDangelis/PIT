@@ -10,7 +10,8 @@ require 'db.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - VMH</title>
-    <link rel="stylesheet" href="styleini.css">
+    
+    <link rel="stylesheet" href="page.css">
 </head>
 <body>
 
@@ -23,10 +24,10 @@ require 'db.php';
             </button>
         </a>
 
-
     </div>
 
-<a class="azin" href="landingpage.php">
+
+    <a class="azin" href="landingpage.php">
     <button class="button" data-text="Awesome">
                 <span class="actual-text">&nbsp;Sobre&nbsp;</span>
                 <span aria-hidden="true" class="front-text">&nbsp;Sobre&nbsp;</span>
@@ -34,8 +35,18 @@ require 'db.php';
 </a>
 
 
+<a href="inicio" class="a3">
+            <button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;Voltar&nbsp;</span>
+                <span aria-hidden="true" class="front-text">&nbsp;Voltar&nbsp;</span>
+            </button>
+        </a>
     <div id="AreaBranca">
-        <button id="botao"> Iniciar Questionário</button>   
+
+
+    <h1>Quem somos Nós</h1>
+    
+
     </div>
     
     
