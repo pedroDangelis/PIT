@@ -14,24 +14,8 @@ require 'db.php';
 </head>
 <body>
 
-    <div id="AreaBranca">
-
-        <a href="feedback.php" class="a2">
-            <button class="button" data-text="Awesome">
-                <span class="actual-text">&nbsp;FeedBack&nbsp;</span>
-                <span aria-hidden="true" class="front-text">&nbsp;FeedBack&nbsp;</span>
-            </button>
-        </a>
-
-
-    </div>
-
-<a class="azin" href="landingpage.php">
-    <button class="button" data-text="Awesome">
-                <span class="actual-text">&nbsp;Sobre&nbsp;</span>
-                <span aria-hidden="true" class="front-text">&nbsp;Sobre&nbsp;</span>
-            </button>
-</a>
+    <a href="feedback.php">Feedback</a>
+    <a href="landingpage.php">Quem Somos</a>
 
 
     <div id="AreaBranca">

@@ -1,0 +1,38 @@
+* {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+  
+body{overflow: hidden;
+}
+
+a{
+    margin: 10px;
+    text-decoration: none;
+    color: #326DC5;
+}
+
+#AreaBranca1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10%;
+}
+
+#texto{
+    width: 45%;
+    margin-left: 30%;
+    margin-bottom: 18%;
+}
+
+
+#background{  
+    width: 100%;
+    height: 50vh;
+    background-image: url(./assets/img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+  

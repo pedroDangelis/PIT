@@ -11,33 +11,13 @@
 <link rel="stylesheet" href="pagefeed.css">
 </head>
 <body>
-    
-
-<div id="AreaBranca">
-
-<a href="feedback.php" class="a2">
-    <button class="button" data-text="Awesome">
-        <span class="actual-text">&nbsp;FeedBack&nbsp;</span>
-        <span aria-hidden="true" class="front-text">&nbsp;FeedBack&nbsp;</span>
-    </button>
-</a>
 
 
-</div>
+<a href="feedback.php">Feedback</a>
 
-<a class="azin" href="landingpage.php">
-<button class="button" data-text="Awesome">
-        <span class="actual-text">&nbsp;Sobre&nbsp;</span>
-        <span aria-hidden="true" class="front-text">&nbsp;Sobre&nbsp;</span>
-    </button>
-</a>
+<a href="landingpage.php">Quem Somos</a>
 
-<a href="inicio" class="a3">
-            <button class="button" data-text="Awesome">
-                <span class="actual-text">&nbsp;Voltar&nbsp;</span>
-                <span aria-hidden="true" class="front-text">&nbsp;Voltar&nbsp;</span>
-            </button>
-</a>
+<a href="inicio">Página</a>
 
 <h1>FeedBack</h1>
 

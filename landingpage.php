@@ -11,39 +11,20 @@ require 'db.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos - VMH</title>
     
-    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="LandPage.css">
 </head>
 <body>
 
-    <div id="AreaBranca">
+    <a href="feedback.php">Feedback</a>
 
-        <a href="feedback.php" class="a2">
-            <button class="button" data-text="Awesome">
-                <span class="actual-text">&nbsp;FeedBack&nbsp;</span>
-                <span aria-hidden="true" class="front-text">&nbsp;FeedBack&nbsp;</span>
-            </button>
-        </a>
+    <a href="inicio" >Página Inicial</a>
 
+    <div id="AreaBranca1">
+        <h1>Quem somos Nós</h1><br>
     </div>
 
-
-    <a class="azin" href="landingpage.php">
-        <button class="button" data-text="Awesome">
-            <span class="actual-text">&nbsp;Sobre&nbsp;</span>
-            <span aria-hidden="true" class="front-text">&nbsp;Sobre&nbsp;</span>
-        </button>
-    </a>
-
-
-    <a href="inicio" class="a3">
-        <button class="button" data-text="Awesome">
-            <span class="actual-text">&nbsp;Voltar&nbsp;</span>
-            <span aria-hidden="true" class="front-text">&nbsp;Voltar&nbsp;</span>
-        </button>
-    </a>
-
-    <div id="AreaBranca">
-        <h1>Quem somos Nós</h1>
+    <div id="texto">
+        <h3>Bem-vindo à Virtual Mental Health: encontre o caminho para o bem-estar!<br><br>Se você está buscando auxílio para lidar com problemas psicológicos e encontrar apoio emocional, você veio ao lugar certo. Nossa empresa é especializada em oferecer suporte e orientação para pessoas que estão passando por desafios mentais e emocionais. Através de um questionário cuidadosamente elaborado, podemos fornecer uma abordagem personalizada e direcionada para ajudá-lo a encontrar o caminho para uma vida mais saudável e equilibrada.</h3>
     </div>
     
     <div id="background"></div>
