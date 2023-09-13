@@ -17,7 +17,7 @@ require 'db.php';
 </head>
 <body>
     <header><img src="assets/Logo.png" alt=""></header>
-    <aside><button id="btn">Iniciar Questionário!</button>
-    <a href="feedback.php"></a></aside>
+    <aside><a href="Questionario.php"><button id="btn">Iniciar Questionário!</button></a>
+    </aside>
 </body>
 </html>
