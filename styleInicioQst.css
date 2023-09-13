@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 79.9vh;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    box-shadow: black 5px 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+aside {
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/menor.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 195px;
+}
+
+header img {
+    cursor: pointer;
+}
+
+#btn {
+    width: 445px;
+    height: 80px;
+    background-color: #326DC5;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#btn:hover{
+    background-color: rgb(66, 121, 202);
+}
+
+a {
+    font-size: 400px;
+}
