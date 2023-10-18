@@ -17,8 +17,7 @@ if (isset($_POST['enviaqst'])) {
     $result = $stmt->execute();
 
     if ($result) {
-        echo 'Questionário enviado!';
-        exit(0);
+        header("Location: apoio.php");
     } else {
         echo 'erro ao enviar o questionário';
         exit(0);
