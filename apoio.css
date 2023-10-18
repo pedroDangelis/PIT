@@ -59,7 +59,10 @@ a{
     background-color: rgb(66, 121, 202);
 }
 
-
+#ini{
+    position: relative;
+    bottom: 20%;
+}
 
 #mensagens{
     position: relative;

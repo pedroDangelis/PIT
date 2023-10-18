@@ -102,6 +102,22 @@ h2 {
     height: 20vh;
     background-color: #EEFDFF;
     border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.C{
+    text-align: center;
+}
+
+.C h1{
+    font-size: 40px;
+}
+
+.pC{
+    font-size: 18px;
+    color: #326DC5;
 }
 
 .menu-cont {

@@ -1,3 +1,7 @@
+<?php
+session_start();
+require 'db.php';
+?>
 <!DOCTYPE html>
 <html lang="PT-br">
 <head>
@@ -23,24 +27,39 @@
 
     <div class="container">
         <div id="cont"> 
-        <div class="people">
-            <img src="./people.png" alt="">
-            <img src="./people.png" alt="">
-            <img src="./people.png" alt="">
+            <div class="people">
+                <img src="./people.png" alt="">
+                <img src="./people.png" alt="">
+                <img src="./people.png" alt="">
+            </div>
+            <h2>Assistência simplificada <br> para todos!</h2>
+            <p>uma nova parceria com os melhores <br> profissionais da área.</p>
+            <a href="Questionario.php"><button class="BTN">Realize o questionário!</button></a>
+            <a id="feedback" href="feedback.php">Deixe seu feedback</a>
         </div>
-        <h2>Assistência simplificada <br> para todos!</h2>
-        <p>uma nova parceria com os melhores <br> profissionais da área.</p>
-        <a href="Questionario.php"><button class="BTN">Realize o questionário!</button></a>
-        <a id="feedback" href="feedback.php">Deixe seu feedback</a>
-    </div>
 
-    <div class="contL">
-        <img src="./Woman.png" alt="">
-    </div>
+        <div class="contL">
+            <img src="./Woman.png" alt="">
+        </div>
     </div>
 
     <div class="menu-cont">
-        <div class="menu"></div>
+        <div class="menu">
+            <div class="C">
+                <h1>+15</h1> <br>
+                <h5 class="pC">pacientes atendidos</h5>
+            </div>
+
+            <div class="C">
+                <h1>+15</h1> <br>
+                <h5 class="pC">profissionais parceiros</h5>
+            </div> 
+
+            <div class="C">
+                <h1>+15</h1> <br>
+                <h5 class="pC">casos solucionados</h5>
+            </div> 
+        </div>
     </div>
 </body>
 </html>

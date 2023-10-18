@@ -49,7 +49,7 @@ if (isset($_POST["enviar"])) {
 
   <a href="landingpage.php">Quem Somos</a>
 
-  <a href="inicio">Página</a>
+  <a href="inicio">Página Inicial</a>
 
   <h1>FeedBack</h1>
 

@@ -18,6 +18,7 @@ if (isset($_POST['enviaqst'])) {
 
     if ($result) {
         header("Location: apoio.php");
+        exit(0);
     } else {
         echo 'erro ao enviar o questionário';
         exit(0);
