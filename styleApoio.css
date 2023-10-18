@@ -51,3 +51,20 @@ li:hover {
 .list {
     text-decoration: none;
 }
+
+.cont_dir {
+    width: 40%;
+    height: 90vh;
+    background-image: url(https://images.ctfassets.net/jrhizl9l7csx/4A7TcN9TRa2pR5tJTaYnmy/d4f81502e6b73f69a4eb5dd24cbdd83f/Great_savings.jfif?w=680&q=75&fm=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 60%;
+}
+
+.cont_esq{
+    width: 60%;
+    height: 100%;
+    background-color: #9bcfffa8;
+    margin-bottom: 20em;
+}

@@ -26,7 +26,8 @@
   </div>
 </header>
 
-  
-    
+<div class="cont_dir"> <img src="" alt=""></div>
+<div class="cont_esq">a</div>
+
 </body>
 </html>
