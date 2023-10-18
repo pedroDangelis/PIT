@@ -21,7 +21,7 @@
     <a href="Questionario.php"><button id="btn">Refazer Questionário!</button></a>
     <p id="mensagens">Suas respostas foram registradas com sucesso! Obrigado pela confiança! <br><br> Você não está sozinho. Buscar ajuda é um sinal de coragem e cuidado. Estamos aqui para apoiar você no caminho da superação. <br> Respire fundo, confie e dê um passo de cada vez. Você vai vencer isso.</p>
   </aside>
-  <a href="inicio.php"><button id="btninicio">Pagina de Inicio</button></a>
+  <a href="inicio.php"><button id="btn">Pagina de Inicio</button></a>
     
 </body>
 </html>

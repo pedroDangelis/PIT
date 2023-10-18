@@ -59,21 +59,7 @@ a{
     background-color: rgb(66, 121, 202);
 }
 
-#btninicio {
-    width: 245px;
-    height: 60px;
-    background-color: #326DC5;
-    color: white;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: .2s ease-in-out;
-}
 
-#btninicio:hover{
-    background-color: rgb(66, 121, 202);
-}
 
 #mensagens{
     position: relative;
