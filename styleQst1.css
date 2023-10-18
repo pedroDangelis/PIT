@@ -17,10 +17,11 @@ header {
     rgba(144, 154, 235, 1) 92%
   );
 }
+
 .alternativas {
   padding: 1em;
   padding-left: 2em;
-  background-color: #909aeb;
+  background-color: #326DC5;
   border-bottom-right-radius: 30%;
   border-start-start-radius: 30%;
   color: white;
