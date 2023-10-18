@@ -52,6 +52,12 @@ li:hover {
     text-decoration: none;
 }
 
+.Cont{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .cont_dir {
     width: 40%;
     height: 90vh;
@@ -59,12 +65,18 @@ li:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 60%;
 }
 
 .cont_esq{
     width: 60%;
-    height: 100%;
-    background-color: #9bcfffa8;
-    margin-bottom: 20em;
+    padding-top: 5%;
+    background-color: #afdaffa8;
+}
+
+p{
+    font-size: 18px;
+}
+
+a{
+    color: rgb(255, 0, 0);
 }

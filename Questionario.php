@@ -56,7 +56,7 @@ if (isset($_POST['enviaqst'])) {
         <div class="container">
         <div class="Questao">
             <div class="texto">
-                <p>1. Sim, não ou talvez?</p>
+                <p>1. Você tem se sentido constantemente triste, desanimado ou sem interesse nas coisas que costumava gostar?</p> <br>
             </div>
 
             <div class="alternativas">
