@@ -78,7 +78,7 @@ if (isset($_POST['entrar'])) {
             if ($rows[0]['admin']) {
                 header("Location: admin.php");
             } else {
-                header("Location: inicioQst.php");
+                header("Location: inicio.php");
             }
         } else {
             echo 'A senha está errada';

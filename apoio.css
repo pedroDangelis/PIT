@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     border: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -38,13 +38,18 @@ header img {
     cursor: pointer;
 }
 
+a{
+    margin-top: 25em;
+    margin-left: 45%;
+}
+
 #btn {
-    width: 445px;
-    height: 80px;
+    width: 245px;
+    height: 60px;
     background-color: #326DC5;
     color: white;
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     transition: .2s ease-in-out;
@@ -54,3 +59,9 @@ header img {
     background-color: rgb(66, 121, 202);
 }
 
+#mensagens{
+    position: relative;
+    bottom: 25%;
+    right: 28%;
+    font-size: large;
+}
