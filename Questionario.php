@@ -73,7 +73,7 @@ if (isset($_POST['enviaqst'])) {
 
         <div class="Questao">
             <div class="texto">
-                <p>2. Sim, não ou talvez?</p>
+                <p>2. Você tem tido dificuldade em dormir, ficando acordado durante a noite ou tendo problemas para adormecer?</p> <br>
             </div>
 
             <div class="alternativas">
@@ -90,7 +90,7 @@ if (isset($_POST['enviaqst'])) {
 
         <div class="Questao">
             <div class="texto">
-                <p>3. Sim, não ou talvez?</p>
+                <p>3. Você tem notado mudanças significativas no seu apetite, peso ou padrões alimentares recentemente?</p> <br>
             </div>
 
             <div class="alternativas">
@@ -107,7 +107,7 @@ if (isset($_POST['enviaqst'])) {
 
         <div class="Questao">
             <div class="texto">
-                <p>4. Sim, não ou talvez?</p>
+                <p>4. Você se sente ansioso, preocupado ou em pânico com frequência?</p> <br>
             </div>
 
             <div class="alternativas">
@@ -124,7 +124,7 @@ if (isset($_POST['enviaqst'])) {
 
         <div class="Questao">
             <div class="texto">
-                <p>5. Sim, não ou talvez?</p>
+                <p>5. Você já teve pensamentos ou planos suicidas, ou se sentiu desesperançoso em relação ao futuro?</p> <br>
             </div>
 
             <div class="alternativas">

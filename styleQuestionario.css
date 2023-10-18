@@ -57,12 +57,8 @@ li:hover {
 .container {
   width: 100%;
   padding-top: 2em;
-  height: 80em;
+  height: 100em;
   background-color: #b8d8f7a8;
-}
-
-.texto{
-  width: 100px;
 }
 
 .alternativas {
