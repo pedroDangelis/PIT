@@ -7,6 +7,15 @@ CREATE TABLE usuario (
     senha VARCHAR(250)
 );
 
+CREATE TABLE `questionario` (
+  `resposta1` varchar(250) NOT NULL,
+  `resposta2` varchar(250) NOT NULL,
+  `resposta3` varchar(250) NOT NULL,
+  `resposta4` varchar(250) NOT NULL,
+  `resposta5` varchar(250) NOT NULL
+);
+
+
 insert into usuario(email, senha, rg, nome, telemovel, admin) values (
 	'testeadmin@gmail.com',
     '123456',
@@ -17,6 +26,8 @@ insert into usuario(email, senha, rg, nome, telemovel, admin) values (
 );
 
 select * from usuario;
+select * from questionario;
+
 
 ALTER TABLE usuario ADD rg varchar(20);
 ALTER TABLE usuario ADD nome varchar(20);
