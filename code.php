@@ -28,12 +28,12 @@ if (isset($_POST['cadastrar'])) {
 }
 
 if (isset($_POST['cadastrarMedico'])) {
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $emailmed = $_POST['EMAILMED'];
+    $senhamed = $_POST['senhamed'];
     $crp = $_POST['crp'];
     $local = $_POST['lugar'];
 
-    $query = "INSERT INTO usuario (email, senha, crp, lugar) VALUES ('$email', '$senha','$crp','$local')";
+    $query = "INSERT INTO MedicoLogin (EMAILMED, senhamed, crp, lugar) VALUES ('$emailmed', '$senhamed','$crp','$local')";
 
     // $query_run = mysqli_query($con, $query);
     $stmt = $PDO->prepare($query);

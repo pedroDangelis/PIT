@@ -31,17 +31,17 @@ require 'db.php';
                     </div>
 
                     <div class="email-container">
-                        <input type="email" name="email" id="" placeholder="Email">
+                        <input type="email" name="EMAILMED" id="" placeholder="Email">
                         <img class="img-input" src="https://www.svgrepo.com/show/502648/email.svg" width="30" alt="">
                     </div>
 
                     <div class="email-container">
-                        <input type="password" name="senha" id="" placeholder="Senha">
+                        <input type="password" name="senhamed" id="" placeholder="Senha">
                         <img class="img-input" src="https://www.svgrepo.com/show/510035/key.svg" width="30" alt="">
                     </div>
 
                     <div class="email-container">
-                        <input type="text" name="crp" id="" placeholder="Crp">
+                        <input type="text" name="crp" id="crp" placeholder="Crp">
                         <img class="img-input" src="https://cdn.icon-icons.com/icons2/3790/PNG/512/pass_badge_identification_profile_identity_id_card_icon_232651.png" width="30" alt="">
                     </div>
 
@@ -83,7 +83,5 @@ require 'db.php';
         <div class="cont_dir"> <img src="" alt=""></div>
     </div>
 
-    <script src="index.js"></script>
 </body>
-
 </html>

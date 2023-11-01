@@ -19,10 +19,8 @@ require 'db.php';
         <div class="nav-bar">
             <ul class="nav-list">
                 <li class="list"><a class="nav" href="inicio.php">Home</a></li>
-                <li class="list"><a class="nav" href="index.php">Logar
-                    
-                </a></li>
-                <li class="list"><a class="nav" href="Cadastro.php">Cadastrar</a></li>
+                <li class="list"><a class="nav" href="landingpage.php">Quem nos Somos ?</a></li>
+                <li class="list"><a class="nav" href="Cadastro.php">Sign UP</a></li>
             </ul>
         </div>
     </header>

@@ -41,12 +41,12 @@ require 'db.php';
                     </div>
 
                     <div class="email-container">
-                        <input type="number" name="telemovel" id="" placeholder="(00) 0000-0000">
+                        <input type="tel" maxlength="14" name="telemovel" id="telefone"  placeholder="(00) 0000-0000" oninput="mascara_telefone()">
                         <img class="img-input" src="https://cdn.icon-icons.com/icons2/3449/PNG/512/cellular_service_telephone_support_phone_communication_call_icon_219309.png" width="30" alt="">
                     </div>
 
                     <div class="email-container">
-                        <input type="text" name="rg" id="" placeholder="RG">
+                        <input type="text" maxlength="13" name="rg" id="rg" placeholder="RG" oninput="mascara_rg()">
                         <img class="img-input" src="https://cdn.icon-icons.com/icons2/3790/PNG/512/pass_badge_identification_profile_identity_id_card_icon_232651.png" width="30" alt="">
                     </div>
 
@@ -87,7 +87,6 @@ require 'db.php';
         <div class="cont_dir"> <img src="" alt=""></div>
     </div>
 
-    <script src="index.js"></script>
 </body>
-
+<script src="Cadastro.js"></script>
 </html>
