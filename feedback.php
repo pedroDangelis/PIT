@@ -45,39 +45,40 @@ if (isset($_POST["enviar"])) {
 </head>
 
 <body>
-<header>
-        <div class="logo"><img src="./logo.png" alt=""></div>
-        <div class="nav-bar">
-            <ul class="nav-list">
-                <li class="list"><a class="nav" href="inicio.php">Home</a></li>
-                <li class="list"><a class="nav" href="quemSomos.php">Quem Somos</a></li>
-                <li class="list"><a class="nav" href="index.php">Log Out</a></li>
-            </ul>
-        </div>
-    </header>
-
-  <h1>FeedBack</h1>
-  <h3>Nos ajude a melhorar nosso site! Será um prazer receber suas sugestões!</h3>
-
-  <div id="AreaBranca">
-    <div class="form-container">
-      <form class="form" method="POST">
-
-        <div class="form-group">
-          <label for="mensagem">Nos conte suas sugestões, avisos ou reclamações</label>
-          <textarea id="textarea" rows="10" cols="50" required="" name="mensagem"></textarea>
-          <!-- <label for="email">Digite seu email</label>
-          <input id="textarea" required="" name="email" /> -->
-        </div>
-
-        <input class="form-submit-btn" type="submit" name="enviar" value="Enviar" />
-
-      </form>
+  <header>
+    <div class="logo"><img src="./logo.png" alt=""></div>
+    <div class="nav-bar">
+      <ul class="nav-list">
+      <li class="list"><a class="nav" href="inicio.php">Home</a></li>
+      <li class="list"><a class="nav" href="quemSomos.php">Quem Somos</a></li>
+      <li class="list"><a class="nav" href="index.php">Log Out</a></li>
+      </ul>
     </div>
-  </div>
+  </header>
 
-  <div id="background"></div>
-  <h1>FeedBack</h1>
+
+  <div class="org">
+    <div id="AreaBranca">
+    <h1>Envie seu feedback!</h1>
+    <h3>Nos ajude a melhorar nosso site! Será um prazer receber suas sugestões!</h3>
+      <div class="form-container">
+        <form class="form" method="POST">
+
+          <div class="form-group">
+            <label for="mensagem">Nos conte suas sugestões, avisos ou reclamações</label>
+            <textarea id="textarea" rows="10" cols="50" required="" name="mensagem"></textarea>
+            <!-- <label for="email">Digite seu email</label>
+            <input id="textarea" required="" name="email" /> -->
+          </div>
+
+          <input class="form-submit-btn" type="submit" name="enviar" value="Enviar" />
+
+        </form>
+      </div>
+    </div>
+    <div id="img_dir"><img src="" alt=""></div>  
+  </div>
+  
 
 </body>
 
