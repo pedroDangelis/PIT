@@ -77,7 +77,7 @@ if (isset($_POST["enviar"])) {
   </div>
 
   <div id="background"></div>
-  <img src="assets/fedback.jpg" alt="">
+  <h1>FeedBack</h1>
 
 </body>
 
